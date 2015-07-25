@@ -18,6 +18,5 @@ end
 
 # root page
 get "/" do
-  @profiles = Profile.all
   erb :root
 end
