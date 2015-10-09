@@ -6,7 +6,7 @@ require File.join(File.dirname(__FILE__), "environment")
 
 configure do
   set :views, "#{File.dirname(__FILE__)}/views"
-  set :show_exceptions, :after_handler
+  # set :show_exceptions, :after_handler
 end
 
 configure :production, :development do
