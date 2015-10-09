@@ -1,6 +1,7 @@
 require "rubygems"
 require "bundler/setup"
 require "sinatra"
+require 'pony'
 require File.join(File.dirname(__FILE__), "environment")
 
 configure do
@@ -38,7 +39,7 @@ post '/' do
     redirect '/success'
   rescue
     @exception = $!
-    erb :boom
+    erb :errored
   end
 end
 
