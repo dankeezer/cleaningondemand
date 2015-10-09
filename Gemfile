@@ -3,6 +3,8 @@ gem 'sinatra'
 gem 'json', '>= 1.8.3'
 gem 'dotenv'
 gem 'rake'
+gem 'pony'
+
 # gem 'data_mapper'
 # gem 'dm-core'
 # gem 'dm-sqlite-adapter'
