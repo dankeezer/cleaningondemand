@@ -9,7 +9,7 @@
 		<title>Cleaning On Demand</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -234,7 +234,7 @@
 
 					<p>If you're looking to schedule a cleaning or consultation give us a call or fill out the form below. We'll be sure to get back to you ASAP!</p>
 
-					<form method="post" action="/" class="well">
+					<form method="post" action="#" class="remote">
 						<div class="row">
 							<div class="6u 12u(mobilep)">
 								<input type="text" name="name" placeholder="Name" />
@@ -251,7 +251,7 @@
 						<div class="row">
 							<div class="12u">
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input id="submit_button" type="submit" value="Send Message" /></li>
 								</ul>
 							</div>
 						</div>
@@ -278,6 +278,12 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			
+			<script>
+				$( "#submit_button" ).click(function( event ) {				  
+				  document.getElementById('submit_button').value = "Sent!"
+				});
+			</script>
 
 	</body>
 </html>

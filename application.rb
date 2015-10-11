@@ -2,6 +2,9 @@ require "rubygems"
 require "bundler/setup"
 require "sinatra"
 require 'pony'
+require 'dotenv'
+Dotenv.load
+
 require File.join(File.dirname(__FILE__), "environment")
 
 configure do
@@ -22,6 +25,13 @@ get "/" do
   erb :root
 end
 
+get "/success" do
+  erb :"success.js"
+end
+
+get "/error" do
+  erb :error
+end
 
 post '/' do 
   configure_pony
@@ -32,14 +42,14 @@ post '/' do
   begin
     Pony.mail(
       :from => "#{name}<#{sender_email}>",
-      :to => 'dankeezer@gmail.com',
-      :subject =>"#{name} has contacted you from cleaningondemand.com",
+      :to => ENV['CONTACT_EMAIL'],
+      :subject =>"New message from #{name} via cleaningondemand.com",
       :body => "#{message}",
     )
-    redirect '/success'
+    redirect "/"
   rescue
     @exception = $!
-    erb :errored
+    erb :error
   end
 end
 
@@ -49,8 +59,8 @@ def configure_pony
     :via_options => { 
       :address              => 'smtp.sendgrid.net', 
       :port                 => '587',  
-      :user_name            => ENV['SENDGRID_USERNAME'], 
-      :password             => ENV['SENDGRID_PASSWORD'], 
+      :user_name            => ENV['SENDGRID_USERNAME'],
+      :password             => ENV['SENDGRID_PASSWORD'],
       :authentication       => :plain, 
       :enable_starttls_auto => true,
       :domain               => 'heroku.com'

@@ -4,7 +4,7 @@ gem 'json', '>= 1.8.3'
 gem 'dotenv'
 gem 'rake'
 gem 'pony'
-
+	
 # gem 'data_mapper'
 # gem 'dm-core'
 # gem 'dm-sqlite-adapter'
@@ -13,9 +13,9 @@ gem 'pony'
 # gem 'dm-aggregates'
 # gem 'dm-migrations'
 
-# group :development do
-#   gem 'foreman'
-# end
+group :development do
+  gem 'pry'
+end
 
 # group :test do
 #   gem 'rspec', :require => 'spec'
