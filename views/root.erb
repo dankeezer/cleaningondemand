@@ -4,6 +4,57 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<style>
+
+	.full_width {
+		/*margin-left: 0 !important;
+		margin-right: 0 !important;*/
+		padding-top: 40px !important;
+		padding-bottom: 0 !important;
+		width: 75% !important;
+		border: 1px solid #eee;
+	}
+
+	.overlay {
+	  position: relative;
+	  /*overflow:auto;*/
+	  overflow-x: scroll;
+	}					
+
+	.slideshow_text {
+		font-weight: 200;
+	}
+
+	.after_pic_cell {
+		padding-right: 25px;
+		padding-left: 5px;
+	}
+
+	.overlay::-webkit-scrollbar {
+	    -webkit-appearance: none;
+	}
+
+	.overlay::-webkit-scrollbar:vertical {
+	    width: 11px;
+	}
+
+	.overlay::-webkit-scrollbar:horizontal {
+	    height: 11px;
+	}
+
+	.overlay::-webkit-scrollbar-thumb {
+	    border-radius: 8px;
+	    border: 2px solid white; /* should match background, can't be transparent */
+	    background-color: rgba(0, 0, 0, .5);
+	}
+
+	.overlay::-webkit-scrollbar-track { 
+	    background-color: #fff; 
+	    border-radius: 8px; 
+	} 	
+
+</style>
+
 <html>
 	<head>
 		<title>Cleaning On Demand</title>
@@ -43,183 +94,62 @@
 
 				<div class="box alt container">
 					<section class="feature left">
-						<a href="#" class="image icon fa-car"><img src="images/pic01.jpg" alt="" /></a>
+						<a href="#" class="image icon"><img src="images/pic01.jpg" alt="" /></a>
 						<div class="content">
 							<h3>Steam Cleans Better</h3>
 							<p>We use steam vapor to clean your car's exterior and interior. As a critical component of the cleaning industry, steam is known for being effective and sterilizing.</p>
 						</div>
 					</section>
 					<section class="feature right">
-						<a href="#" class="image icon fa-info"><img src="images/pic02.jpg" alt="" /></a>
+						<a href="#" class="image icon"><img src="images/pic02.jpg" alt="" /></a>
 						<div class="content">
 							<h3>Steam Doesn't Hurt</h3>
 							<p>Steam cleaning your vehicle will not scratch your car nor damage the paint. In fact, you're more likely to see scratches after a traditional car wash than you would after a steam clean!</p>
 						</div>
 					</section>
 					<section class="feature left">
-						<a href="#" class="image icon fa-trophy"><img src="images/pic03.jpg" alt="" /></a>
+						<a href="#" class="image icon"><img src="images/pic03.jpg" alt="" /></a>
 						<div class="content">
 							<h3>Save The Environment</h3>
 							<p>Steam cleaning uses LESS water than a traditional car wash with no waste-water run-off!</p>
 						</div>
 					</section>
-				</div>
-
-				<!--
-				<div class="box container">
-					<header>
-						<h2>A lot of generic stuff</h2>
-					</header>
-					<section>
-						<header>
-							<h3>Paragraph</h3>
-							<p>This is the subtitle for this particular heading</p>
-						</header>
-						<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
-						habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
-						leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
-						amet risus elit.</p>
-					</section>
-					<section>
-						<header>
-							<h3>Blockquote</h3>
-						</header>
-						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
-						tempus euismod. Vestibulum ante ipsum primis in faucibus.</blockquote>
-					</section>
-					<section>
-						<header>
-							<h3>Divider</h3>
-						</header>
-						<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
-						ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-						facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-						tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-						posuere cubilia.</p>
-						<hr />
-						<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
-						ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-						facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-						tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-						posuere cubilia.</p>
-					</section>
-					<section>
-						<header>
-							<h3>Unordered List</h3>
-						</header>
-						<ul class="default">
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						</ul>
-					</section>
-					<section>
-						<header>
-							<h3>Ordered List</h3>
-						</header>
-						<ol class="default">
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						</ol>
-					</section>
-					<section>
-						<header>
-							<h3>Table</h3>
-						</header>
-						<div class="table-wrapper">
-							<table class="default">
-								<thead>
-									<tr>
-										<th>ID</th>
-										<th>Name</th>
-										<th>Description</th>
-										<th>Price</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>45815</td>
-										<td>Something</td>
-										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>24524</td>
-										<td>Nothing</td>
-										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>45815</td>
-										<td>Something</td>
-										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>24524</td>
-										<td>Nothing</td>
-										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
-										<td>19.99</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="3"></td>
-										<td>100.00</td>
-									</tr>
-								</tfoot>
-							</table>
+					<section class="feature right">
+						<a href="#" class="image icon"><img src="images/pic04.jpg" alt="" /></a>
+						<div class="content">
+							<h3>Business To Business</h3>
+							<p>Looking for a cleaning solution for your business's entire fleet? Cleaning on Demand has you covered, call for more details!</p>
 						</div>
-					</section>
-					<section>
-						<header>
-							<h3>Form</h3>
-						</header>
-						<form method="post" action="#">
-							<div class="row">
-								<div class="6u 12u(mobilep)">
-									<label for="name">Name</label>
-									<input class="text" type="text" name="name" id="name" value="" placeholder="John Doe" />
-								</div>
-								<div class="6u 12u(mobilep)">
-									<label for="email">Email</label>
-									<input class="text" type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
-								</div>
-							</div>
-							<div class="row">
-								<div class="12u">
-									<label for="subject">Subject</label>
-									<input class="text" type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
-								</div>
-							</div>
-							<div class="row">
-								<div class="12u">
-									<label for="subject">Message</label>
-									<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-								</div>
-							</div>
-							<div class="row">
-								<div class="12u">
-									<ul class="actions">
-										<li><input type="submit" value="Send" /></li>
-										<li><input type="reset" value="Reset" class="alt" /></li>
-									</ul>
-								</div>
-							</div>
-						</form>
-					</section>
+					</section>					
 				</div>
-				-->
 
-				<footer class="major container 75%">
-					<h3>The last thing</h3>
-					<p>This will be a slide show of before / after pics.</p>
-					<ul class="actions">
-						<li><a href="#" class="button">Button</a></li>
-					</ul>
+
+
+
+				<footer class="major container 75% full_width">
+					<h3>Before And After</h3>
+					<p>Check out these REAL photos of vehicles cleaned by Cleaning On Demand <i class="fa fa-arrow-right"></i></p>
+	
+
+				  <div class="overlay">
+				    <table width="100%" height="350px">
+				  		<tr>					
+								<% i = 1 %>
+								<% 17.times do %>
+									<td class="before_pic_cell">
+										<center><h5 class="slideshow_text">Before</h5></center>
+										<img src="images/beforeafter/before<%= i.to_s %>.png" height="350px" alt="" />
+									</td>
+									<td class="after_pic_cell">
+										<center><h5 class="slideshow_text">After</h5></center>
+										<img src="images/beforeafter/after<%= i.to_s %>.png" height="350px" alt="" />
+									</td>
+									<% i += 1 %>
+								<% end %>
+							</tr>
+						</table>
+					</div>
+
 				</footer>
 
 			</div>
